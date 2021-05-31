@@ -1,14 +1,17 @@
-1. 拉取镜像
-```shell script
+#### 1. 拉取镜像
+
+```
 docker pull star7th/showdoc
 ```
-2. 创建文件夹
-```shell script
+#### 2. 创建文件夹
+
+```
 mkdir -p /home/doc/html
 ```
 
-3. 运行docker命令
-```shell script
+#### 3. 运行docker命令
+
+```
 docker run -d \
   --name=doc \
   --user=root \
@@ -18,10 +21,11 @@ docker run -d \
   star7th/showdoc
 ```
 
-4. nginx配置
+#### 4. nginx配置
 
 新增/usr/local/nginx/conf/vhost/doc4999.conf
-```shell script
+
+```
 server {
         listen       80;
         listen       443 ssl;
